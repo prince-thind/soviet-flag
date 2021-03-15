@@ -109,19 +109,19 @@ background-color: cornsilk;
 {
     10%
     {
-        transform: scale(1.1) rotate(45deg);
-        opacity:0.9;
+        transform: scale(1.2) rotate(45deg);
+        opacity:0.8;
       
     }
     50%
     {
-        transform: scale(1.2) rotate(45deg);
-        opacity:0.8;
+        transform: scale(1.3) rotate(45deg);
+        opacity:0.6;
     }
     90%
     {
-        transform: scale(1.1) rotate(45deg);
-        opacity:0.9;
+        transform: scale(1.2) rotate(45deg);
+        opacity:0.8;
       
     }
 
@@ -130,7 +130,7 @@ background-color: cornsilk;
 {
     10%
     {
-        transform: scale(1.2) rotate(45deg);
+        transform: scale(1.3) rotate(45deg);
         opacity:0.5;
     }
     50%
@@ -140,7 +140,7 @@ background-color: cornsilk;
     }
     90%
     {
-        transform: scale(1.2) rotate(45deg);
+        transform: scale(1.3) rotate(45deg);
         opacity:0.5;
     }
 
