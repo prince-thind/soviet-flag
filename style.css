@@ -15,20 +15,26 @@ body {
 .list {
   padding: 1rem 1rem 1rem 2rem;
   margin: 1rem auto;
-  width: 70vw;
+  width: 50vw;
   background-color: rgb(77, 192, 77);
   min-height: 100vh;
   border: 5px solid black;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .list > li {
   text-align: justify;
   padding: 1rem;
   font-size: 1.5rem;
+  margin-left: 1rem;
 }
- .list>li:hover{
-     transform: scale(1.03);
- }
- .list a:visited{
-     color:rgb(119, 16, 16)
- }
+
+.list > li:hover {
+  transform: scale(1.03);
+}
+.list a {
+  margin-left: -1.5rem;
+}
+
+.list a:visited {
+  color: rgb(119, 16, 16);
+}
