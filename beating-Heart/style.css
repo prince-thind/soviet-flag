@@ -1,0 +1,131 @@
+body {
+  background-color: cornsilk;
+}
+.head {
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  background-color: rgb(143, 79, 36);
+  padding: 20px;
+  box-shadow: 3px 3px 20px 10px rgb(77, 44, 6);
+  margin-bottom: 10px;
+}
+.main-body {
+  display: flex;
+  width: 100%;
+  height: 75vh;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  min-height: 500px;
+}
+.main-body > * {
+  border: 1px solid black;
+  background-color: rgba(255, 153, 0, 0.575);
+}
+.left-pane {
+  flex-grow: 1;
+}
+.middle-pane {
+  flex-grow: 3;
+  background-color: rgba(15, 77, 15, 0.596);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-pane {
+  flex-grow: 1;
+}
+.heart-container {
+  min-height: 400px;
+  min-width: 400px;
+  border: 5px ridge rgb(23, 59, 6);
+  background-color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.final-frame {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  transform: rotate(45deg);
+}
+.heart::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  bottom: 50px;
+}
+.heart::before {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  right: 50px;
+}
+.h2 {
+  animation: beat2 1s linear 1s infinite normal forwards;
+}
+.h3 {
+  animation: beat3 1s linear 1s infinite normal forwards;
+}
+.h4 {
+  animation: beat4 1s linear 1s infinite normal forwards;
+}
+
+@keyframes beat2 {
+  10% {
+    transform: scale(1.2) rotate(45deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3) rotate(45deg);
+    opacity: 0.6;
+  }
+  90% {
+    transform: scale(1.2) rotate(45deg);
+    opacity: 0.8;
+  }
+}
+@keyframes beat3 {
+  10% {
+    transform: scale(1.3) rotate(45deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5) rotate(45deg);
+    opacity: 0.4;
+  }
+  90% {
+    transform: scale(1.3) rotate(45deg);
+    opacity: 0.5;
+  }
+}
+@keyframes beat4 {
+  10% {
+    transform: scale(1.5) rotate(45deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.7) rotate(45deg);
+    opacity: 0.1;
+  }
+  90% {
+    transform: scale(1.5) rotate(45deg);
+    opacity: 0.3;
+  }
+}
