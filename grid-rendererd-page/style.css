@@ -1,0 +1,125 @@
+body {
+  font-style: cursive;
+  padding: 0;
+  margin: 0;
+}
+.grid-box {
+  display: grid;
+  height: 1000px;
+  width: 100%;
+  grid-template-columns: 1fr 20px 5fr 20px 1fr;
+  grid-template-rows: 150px 20px auto 20px 100px;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header header header header"
+    "t-border t-border t-border t-border t-border"
+    "left-bar l-border content r-border right-bar"
+    "b-border b-border b-border b-border b-border"
+    "footer footer footer footer footer";
+}
+.grid-item {
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(26, 14, 0, 0.979);
+}
+.border {
+  position: relative;
+}
+.top-border {
+  background-color: brown;
+  grid-area: t-border;
+}
+.left-border {
+  background-color: brown;
+  grid-area: l-border;
+}
+.right-border {
+  background-color: brown;
+  grid-area: r-border;
+}
+.bottom-border {
+  background-color: brown;
+  grid-area: b-border;
+}
+.main-header {
+  position: relative;
+  background-color: darkgreen;
+  grid-area: header;
+  font-family: "Faster One", cursive;
+  padding-top: 20px;
+  font-size: 100px;
+}
+.main-content {
+  background-color: rgb(46, 61, 5);
+  grid-area: content;
+}
+
+.side-bar-left {
+  background-color: rgb(94, 61, 0);
+  grid-area: left-bar;
+}
+.side-bar-right {
+  background-color: rgb(94, 61, 0);
+  grid-area: right-bar;
+}
+
+.main-footer {
+  background-color: rgb(56, 119, 87);
+  grid-area: footer;
+}
+
+.main-box {
+  position: relative;
+  padding: 20px;
+  font-size: large;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 70%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  background-color: rgb(150, 76, 50);
+  padding-top: 30px;
+  box-shadow: 0px 0px 20px 0px white;
+}
+.last-button {
+  background-color: gray;
+  margin: 5px auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(26, 14, 0, 0.979);
+  width: 100px;
+  height: 20px;
+}
+.head-text {
+  position: relative;
+  font-family: "cursive";
+}
+.flower-img {
+  height: 300px;
+  width: 300px;
+}
+.fig-caption {
+  position: relative;
+  top: -20px;
+  background-color: rgb(150, 65, 50);
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+.figure {
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  background-color: rgb(173, 173, 173);
+
+  box-shadow: 0px 0px 20px 0px black;
+}
+.p-text {
+  text-align: justify;
+}
