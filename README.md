@@ -1,2 +1,2 @@
-# html-css-basics
-a repository containing a collection of basic html and css pages
+# mini-projects-web-dev
+a Collection of all my web-dev related mini projects
