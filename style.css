@@ -2,39 +2,169 @@
   padding: 0;
   margin: 0;
 }
-
 body {
-  background-color: rgb(54, 134, 54);
+  background-color: rgb(27, 96, 99);
+  color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .heading {
-  background-color: rgb(14, 36, 14);
   padding: 1rem;
-  color: white;
+  text-shadow: 1px 1px 2px black;
+  border-bottom: 2px solid black;
+  background: linear-gradient(to bottom, rgb(35, 35, 105), rgb(65, 126, 126));
 }
-.list {
-  padding: 1rem 1rem 1rem 2rem;
-  margin: 1rem auto;
-  width: 50vw;
-  background-color: rgb(77, 192, 77);
-  min-height: 100vh;
+.main {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.box {
+  flex: 1;
+  border: 2px solid black;
+  background-color: rgb(43, 46, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  background-color: red;
   border: 5px solid black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.list > li {
-  text-align: justify;
-  padding: 1rem;
-  font-size: 1.5rem;
-  margin-left: 1rem;
 }
 
-.list > li:hover {
-  transform: scale(1.03);
+.hammer {
+  position: relative;
+  height: 5rem;
+  top: 10%;
 }
-.list a {
-  margin-left: -1.5rem;
+.hammer-head {
+  position: absolute;
+  width: 1.5rem;
+
+  border-radius: 0.5rem;
+  height: 4rem;
+  left: 20%;
+  background-color: yellow;
+  border: 2px solid black;
+  transform: rotate(45deg);
 }
 
-.list a:visited {
-  color: rgb(119, 16, 16);
+.hammer-handle {
+  position: absolute;
+  width: 1rem;
+  height: 150%;
+  left: 28%;
+  top: 12%;
+  background-color: yellow;
+  border: 2px solid black;
+  transform: rotate(135deg);
+}
+.sickle {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  bottom: 20%;
+  left: 14%;
+  transform: rotate(5deg);
+}
+
+.sickle-handle {
+  position: absolute;
+  width: 0.7rem;
+  height: 75%;
+  left: 20%;
+  top: 90%;
+  background-color: yellow;
+  border: 2px solid black;
+  transform: rotate(40deg);
+}
+
+.sickle-head {
+  position: absolute;
+  --size: 6rem;
+  height: var(--size);
+  width: var(--size);
+  left: 25%;
+  transform: rotate(175deg);
+  box-shadow: 2px 2px 0 0 black inset, 10px 10px 0px yellow inset,
+    11px 10px 0 2px black inset;
+  border-radius: 50%;
+}
+
+.sickle-bolt {
+  position: absolute;
+  --size: 1.3rem;
+  height: var(--size);
+  width: var(--size);
+  top: 90%;
+  left: 35%;
+  background-color: yellow;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.stars {
+  position: relative;
+  left: 10%;
+  bottom: 45%;
+}
+.star {
+  position: absolute;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellow;
+  border-left: 100px solid transparent;
+  top: -35px;
+  left: -90px;
+  transform: rotate(35deg);
+}
+
+.star::before {
+  border-bottom: 80px solid yellow;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  top: -45px;
+  left: -65px;
+  content: '';
+  transform: rotate(-35deg);
+}
+
+.star::after {
+  position: absolute;
+  top: 3px;
+  left: -105px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellow;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+.star-1 {
+  transform: scale(0.25);
+}
+.star-2 {
+  transform: scale(0.2);
+  border-bottom-color: red;
+}
+.star-2::after,
+.star-2::before {
+  border-bottom-color: red;
+}
+
+@media only screen and (max-width: 760px) {
+  .flag {
+    position: absolute;
+    --center: calc((100vw - 250px) / 2);
+    left: var(--center);
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
 }
