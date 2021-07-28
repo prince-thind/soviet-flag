@@ -1,2 +1,2 @@
-# mini-projects-web-dev
-a Collection of all my web-dev related mini projects
+# flag of USSR
+a simple soviet flag made with pure CSS
