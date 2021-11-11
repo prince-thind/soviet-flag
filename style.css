@@ -3,7 +3,8 @@
   margin: 0;
 }
 body {
-  background-color: rgb(27, 96, 99);
+  background-color: hsl(245, 0%, 5%);
+  /* background: radial-gradient(hsl(240, 30%, 45%),hsl(240, 30%, 35%)); */
   color: white;
   text-align: center;
   display: flex;
@@ -14,7 +15,7 @@ body {
   padding: 1rem;
   text-shadow: 1px 1px 2px black;
   border-bottom: 2px solid black;
-  background: linear-gradient(to bottom, rgb(35, 35, 105), rgb(65, 126, 126));
+  background: linear-gradient(to bottom, hsl(240, 25%, 30%), hsl(240, 25%, 15%));
 }
 .main {
   flex: 1;
@@ -94,8 +95,8 @@ body {
   width: var(--size);
   left: 25%;
   transform: rotate(175deg);
-  box-shadow: 2px 2px 0 0 black inset, 10px 10px 0px yellow inset,
-    11px 10px 0 2px black inset;
+  box-shadow: 2px 2px 0 0 black inset, 12px 10px 0px yellow inset,
+    12px 10px 0 2px black inset;
   border-radius: 50%;
 }
 
